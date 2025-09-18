@@ -1,9 +1,11 @@
 # 🚀 MY PYTHON LEARNING CHEATSHEET
+
 Keep this open in a second terminal: bat ~/python-learning/CHEATSHEET.md
 
 ═══════════════════════════════════════════════════════════════════
 
 ## 🎯 QUICK START
+
 learn-python     # Start split-screen environment
 
 ═══════════════════════════════════════════════════════════════════
@@ -11,10 +13,12 @@ learn-python     # Start split-screen environment
 ## ⌨️ VIM SURVIVAL GUIDE
 
 ### MODES
+
     Normal Mode → Insert Mode: i
     Insert Mode → Normal Mode: Esc
     
 ### ESSENTIAL COMMANDS
+
     :w              Save
     :q              Quit  
     :wq             Save & Quit
@@ -23,6 +27,7 @@ learn-python     # Start split-screen environment
     Ctrl+r          Redo
 
 ### COPY/PASTE
+
     v               Start selecting (visual)
     V               Select whole lines
     y               Copy selection
@@ -33,6 +38,7 @@ learn-python     # Start split-screen environment
 ═══════════════════════════════════════════════════════════════════
 
 ## 🤖 COPILOT CONTROLS
+
     Tab             Accept suggestion
     Esc             Dismiss suggestion  
     Alt+]           Next suggestion
@@ -45,17 +51,20 @@ learn-python     # Start split-screen environment
 ## 🔄 SEND CODE TO IPYTHON
 
 ### METHOD 1: Select & Send
+
     1. Press V (visual line mode)
     2. Select lines with j/k or ↓/↑  
     3. Press Space sv to send
 
 ### METHOD 2: Quick Send
+
     Space sp        Send paragraph/function
     Space ss        Send cell
 
 ═══════════════════════════════════════════════════════════════════
 
 ## 📁 NAVIGATE FILES (in Neovim)
+
     Space e         File explorer (toggle)
     Space ff        Find files (fuzzy)
     Space fg        Search in files
@@ -67,20 +76,24 @@ learn-python     # Start split-screen environment
 ## 🐍 PYTHON TESTING WORKFLOW
 
 ### 1. WRITE FUNCTION
+
 def my_function(x):
     return x * 2
 
 ### 2. SEND TO IPYTHON
+
     V               (select mode)
     j               (select lines)
     Space sv        (send it)
 
 ### 3. TEST IN IPYTHON
+
 my_function(5)  # Returns: 10
 
 ═══════════════════════════════════════════════════════════════════
 
 ## 🎮 TMUX CONTROLS
+
     Ctrl+b %        Split vertical
     Ctrl+b "        Split horizontal
     Ctrl+b arrow    Switch panes
@@ -91,6 +104,7 @@ my_function(5)  # Returns: 10
 ═══════════════════════════════════════════════════════════════════
 
 ## 🐟 FISH SHELL COMMANDS
+
     learn-python    Start environment
     python-repl     Best Python REPL
     nvim file.py    Edit file
@@ -102,6 +116,7 @@ my_function(5)  # Returns: 10
 ═══════════════════════════════════════════════════════════════════
 
 ## 💡 IPYTHON TRICKS
+
     Tab             Auto-complete
     ?               Help (e.g., len?)
     ??              Show source code
@@ -138,13 +153,14 @@ jjjj (select function)
 Space sv (send)
 
 6. In IPython (right pane)
+
 >>> greet_multiple(["Alice", "Bob"])
 Hello, Alice!
 Hello, Bob!
 
 ═══════════════════════════════════════════════════════════════════
 
-## 🚨 HELP! IM STUCK!
+## 🚨 HELP! IM STUCK
 
 Cant exit Vim?
     Press: Esc :q!
@@ -165,13 +181,59 @@ IPython crashed?
     Ctrl+d (exit)
     ipython (restart)
 
-═══════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+## 🔀 GIT COMMANDS
+
+### DAILY WORKFLOW
+
+    gsave "message"     Quick save + push (fish function)
+    gstatus            Pretty git status (fish function)
+    
+### BASIC COMMANDS
+
+    git status         Check what changed
+    git add .          Stage all changes
+    git commit -m "msg" Commit with message
+    git push           Send to GitHub
+    git pull           Get latest from GitHub
+    
+### FIXING MISTAKES
+
+    git reset HEAD~1   Undo last commit (keep changes)
+    git checkout file  Discard changes in file
+    git stash          Temporarily save changes
+    git stash pop      Restore saved changes
+    
+### COMMON ISSUES
+
+    "unrelated histories" error:
+    git pull origin main --allow-unrelated-histories
+    
+    Set branch tracking:
+    git branch --set-upstream-to=origin/main main
+    
+    Push new branch:
+    git push -u origin main
+    
+### IN NEOVIM
+
+    Space gg           Open LazyGit (visual git)
+    Look for colors in left gutter = git changes
+
+### GITHUB SETUP GOTCHA
+
+    ⚠️ Create repos WITHOUT initial files to avoid merge issues!
+    Or clone first: git clone git@github.com:USER/REPO.git
+
+══════════════════════════════════════════════════════════════════════════
 
 ## 📝 MY LEARNING NOTES
+
 Add your own notes here!
 
-- 
-- 
-- 
+-
+-
+-
 
 ═══════════════════════════════════════════════════════════════════
